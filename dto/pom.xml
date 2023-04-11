@@ -8,9 +8,9 @@
   <version>0.0.1-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.iaktech</groupId>
+	
 	<artifactId>dto</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	
 	<packaging>jar</packaging>
 	<name>dto</name>
 	<description>Data Transfer Object service (repo)</description>

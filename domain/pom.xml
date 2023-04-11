@@ -7,9 +7,7 @@
   <artifactId>e-commerce-app</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.iaktech</groupId>
 	<artifactId>domain</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>domain</name>
 	<description>Data entity</description>

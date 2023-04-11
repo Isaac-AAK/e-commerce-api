@@ -50,7 +50,7 @@ public class ProductController {
 	public ResponseEntity<Product> updateProduct(@PathVariable long id,@RequestBody Product product) {
 		
 		productService.updateProduct(id,product);
-		return new ResponseEntity<>(HttpStatus.OK);
+		return new ResponseEntity<>(product, HttpStatus.OK);
 		
 	}
 	

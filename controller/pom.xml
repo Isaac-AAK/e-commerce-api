@@ -8,9 +8,9 @@
   <version>0.0.1-SNAPSHOT</version>
    <relativePath/>
 	</parent>
-	<groupId>com.iaktech</groupId>
+	
 	<artifactId>controller</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+
 	<name>controller</name>
 	<description>Api endpoints service </description>
 	<properties>

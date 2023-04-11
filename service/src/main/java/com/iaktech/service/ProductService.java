@@ -2,20 +2,32 @@ package com.iaktech.service;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.iaktech.domain.Product;
 import com.iaktech.dto.ProductRepository;
 
 
-
+@Service
 public class ProductService {
 	
 	@Autowired
 	private ProductRepository productRepository;
 
-	public void updateProduct(long id, Product product) {
-		// TODO Auto-generated method stub
+	public Product updateProduct(long id, Product newProduct) {
+		return productRepository.findById(id)
+				.map(product ->
+		{
+			product.setName(newProduct.getName());
+			product.setDecription(newProduct.getDecription());
+			product.setPrice(newProduct.getPrice());
+			return productRepository.save(product);
+		}).orElseGet(() ->{
+			return productRepository.save(newProduct);
+		});
+				
 		
 	}
 

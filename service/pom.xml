@@ -7,9 +7,7 @@
   <artifactId>e-commerce-app</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.iaktech</groupId>
-	<artifactId>service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>service</artifactId>	
 	<packaging>jar</packaging>
 	<name>service</name>
 	<description>app service</description>
@@ -30,7 +28,6 @@
 		<dependency>
 			<groupId>com.iaktech</groupId>
 			<artifactId>dto</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
